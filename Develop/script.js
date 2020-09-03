@@ -27,22 +27,17 @@ function generatePassword() {
 // First prompt asks number of characters 
 // If user doesn't select a number of characters between 8-158, they will be prompted with an error
 // If user does select a number within the criteria, the are directed to confirm numeric characters
-var numberOfCharacters = prompt("How many characters would you like your password to contain?");
-if (numberOfCharacters > 8) {
-alert("Click OK to confirm including numeric characters");
-} else if (numberOfCharacters < 8) {
-  alert("Password length must be at least 8 characters")
-} if (numberOfCharacters < 128) {
-  alert("Click OK to confirm including numeric characters");
-} else if (numberOfCharacters > 128) {
-  alert("Password length must be less than 129 characters")
-}
-
+var numberOfCharacters=parseInt(prompt("How many characters do you want your password to be?"));
+    while(numberOfCharacters < 8 || numberOfCharacters > 128 || typeof(numberOfCharacters) != "number" || numberOfCharacters === NaN || numberOfCharacters === null) {
+        alert("Please choose a number that is more than 8 and less than 128 characters.");
+        numberOfCharacters=parseInt(prompt("How many characters do you want the password to be?"));
+    } 
+// Need user to select correct criteria next
 "Click OK to confirm including numeric characters"
 "Click OK to confirm including special characters"
 "Click OK to confirm including lowercase characters"
 "Click OK to confirm including uppercase characters"
-// Get user to make their options meet the criteria
+
 
 // Error check--using alerts, make use user options meet the criteria 
 
@@ -50,6 +45,6 @@ alert("Click OK to confirm including numeric characters");
 
 
 // Generate a password 
-
-return password;
+//Use math random to generate
+return password; 
 }
