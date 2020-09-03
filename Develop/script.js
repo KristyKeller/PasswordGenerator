@@ -17,6 +17,7 @@ generateBtn.addEventListener("click", writePassword);
 function generatePassword() {
   var password = "";
   var numberOfCharacters;
+  var possibleChar = [];
   var lowerCase = [ "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
   var upperCase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
   var numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
@@ -28,29 +29,45 @@ function generatePassword() {
 // Using while loop; If user doesn't select a number of characters between 8-158, they will be prompted with an error
 // Using while loop; If user does select a number within the criteria, the are directed to confirm numeric characters
 var numberOfCharacters=parseInt(prompt("How many characters do you want your password to be?"));
-    while(numberOfCharacters < 8 || numberOfCharacters > 128 || typeof(numberOfCharacters) != "number" || numberOfCharacters === NaN || numberOfCharacters === null) {
+    if(numberOfCharacters < 8 || numberOfCharacters > 128 || typeof(numberOfCharacters) != "number" || numberOfCharacters === NaN || numberOfCharacters === null) {
         alert("Please choose a number that is more than 8 and less than 128 characters.");
-        numberOfCharacters=parseInt(prompt("How many characters do you want your password to be?"));
+       return ""; // numberOfCharacters=parseInt(prompt("How many characters do you want your password to be?"));
     } 
 
 // Need user to select correct criteria next
-// Use concat array? Which loop? 
-var lowerCase;
-for (lowerCase
+// Build array from scratch
+// Use an empty array to represent user selections for character options
+// Use concat with the blank array to generate user selections
 
-"Click OK to confirm including lowercase characters"
-"Click OK to confirm including special characters"
+var yesLower = confirm("Click OK to confirm including lowercase characters") 
+if (yesLower) {
+ possibleChar=possibleChar.concat(lowerCase);
+ console.log(possibleChar)
+}
+var yesUpper = confirm("Click OK to confirm including uppercase characters") 
+if (yesUpper) {
+ possibleChar=possibleChar.concat(upperCase);
+ console.log(possibleChar)
+}
+var yesNumber = confirm("Click OK to confirm including uppercase characters") 
+if (yesNumber) {
+ possibleChar=possibleChar.concat(numbers);
+ console.log(possibleChar)
+}
+var yesSpecial = confirm("Click OK to confirm including uppercase characters") 
+if (yesSpecial) {
+ possibleChar=possibleChar.concat(specialChars);
+ console.log(possibleChar)
+}
 
-"Click OK to confirm including numeric characters"
-"Click OK to confirm including uppercase characters"
+// //create for loop 
 
+// i=0 loop (for) through how many char you wanted your password to be math.random to 
+password+= //math.random 
+// end the loop
+console.log(possibleChar)
 
-// Error check--using alerts, make use user options meet the criteria 
-
-"Must select at least one character type"
-
-
-// Generate a password 
-//Use math random to generate
+// Generate a password using user's character selections
+// Use math random to generate?
 return password; 
 }
