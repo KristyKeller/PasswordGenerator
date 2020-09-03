@@ -63,11 +63,16 @@ if (yesSpecial) {
 // create for loop to generate a password using user's character selections
 
 // i=0 loop (for) through how many char you wanted your password to be math.random to 
-for ( let i = 0; i < ""; i++ ) {
-  password+= possibleCharAt(Math.floor(Math.random() * numberOfCharacters));
+
+var i;
+for (let i = 0; i < ""; i++) {
+  console.log(i);
 }
-return password; 
-}
+  password+= Math.random();
+  console.log(generatePassword)
+
 // end the loop
 console.log(possibleChar)
-console.log(password);
+
+return password; 
+}
