@@ -31,7 +31,7 @@ function generatePassword() {
 var numberOfCharacters=parseInt(prompt("How many characters do you want your password to be?"));
     if(numberOfCharacters < 8 || numberOfCharacters > 128 || typeof(numberOfCharacters) != "number" || numberOfCharacters === NaN || numberOfCharacters === null) {
         alert("Please choose a number that is more than 8 and less than 128 characters.");
-       return ""; // numberOfCharacters=parseInt(prompt("How many characters do you want your password to be?"));
+       return "";  // numberOfCharacters=parseInt(prompt("How many characters do you want your password to be?"));
     } 
 
 // Need user to select correct criteria next
@@ -60,14 +60,18 @@ if (yesSpecial) {
  console.log(possibleChar)
 }
 
-// //create for loop 
+// create for loop to generate a password using user's character selections
 
 // i=0 loop (for) through how many char you wanted your password to be math.random to 
-password+= //math.random 
+
+var i;
+for (let i = 0; i < ""; i++) {
+  console.log(i);
+}
+  password+= 
+
 // end the loop
 console.log(possibleChar)
 
-// Generate a password using user's character selections
-// Use math random to generate?
 return password; 
 }
