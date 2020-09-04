@@ -9,4 +9,4 @@
 * Provided alerts to ensure user met needed criteria 
 ## Screenshots
 ![before](file://Password-start.png)
-![after](./assets/Images/password-generated.png "password generated screenshot")
+![after](password-generated.png)
