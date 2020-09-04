@@ -8,4 +8,4 @@
 * Generated a password using user's chosen character selections
 * Provided alerts to ensure user met needed criteria 
 
-https://pasteboard.co/JpzptJU.png
+![screenshot1](https://pasteboard.co/JpzptJU.png "start")
