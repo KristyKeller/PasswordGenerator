@@ -9,4 +9,4 @@
 * Provided alerts to ensure user met needed criteria 
 ## Screenshots
 ![contact](./assets/Password-start.png "password start screenshot")
-![contact](./Homework/Password-Generator/password-generator/Assets/password-generated.png "password generated screenshot")
+![contact](./Code/Homework/Password-Generator/password-generator/Assets/password-generated.png "password generated screenshot")
