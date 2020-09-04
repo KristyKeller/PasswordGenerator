@@ -28,45 +28,47 @@ function generatePassword() {
 // First prompt asks number of characters 
 // Using while loop; If user doesn't select a number of characters between 8-158, they will be prompted with an error
 // Using while loop; If user does select a number within the criteria, the are directed to confirm numeric characters
-var numberOfCharacters=parseInt(prompt("How many characters do you want your password to be?"));
-    if(numberOfCharacters < 8 || numberOfCharacters > 128 || typeof(numberOfCharacters) != "number" || numberOfCharacters === NaN || numberOfCharacters === null) {
-        alert("Please choose a number that is more than 8 and less than 128 characters.");
-       return "";  // numberOfCharacters=parseInt(prompt("How many characters do you want your password to be?"));
-    } 
+  var numberOfCharacters=parseInt(prompt("How many characters do you want your password to be?"));
+      if(numberOfCharacters < 8 || numberOfCharacters > 128 || typeof(numberOfCharacters) != "number" || numberOfCharacters === NaN || numberOfCharacters === null) {
+          alert("Please choose a number that is more than 8 and less than 128 characters.");
+        return "";  // numberOfCharacters=parseInt(prompt("How many characters do you want your password to be?"));
+      } 
 
-// Need user to select correct criteria next
-// Build array from scratch
-// Use an empty array to represent user selections for character options
-// Use concat with the blank array to generate user selections
+  // Need user to select correct criteria next
+  // Build array from scratch
+  // Use an empty array to represent user selections for character options
+  // Use concat with the blank array to generate user selections
 
-var yesLower = confirm("Click OK to confirm including lowercase characters") 
-if (yesLower) {
- possibleChar=possibleChar.concat(lowerCase);
- console.log(possibleChar)
-}
-var yesUpper = confirm("Click OK to confirm including uppercase characters") 
-if (yesUpper) {
- possibleChar=possibleChar.concat(upperCase);
- console.log(possibleChar)
-}
-var yesNumber = confirm("Click OK to confirm including uppercase characters") 
-if (yesNumber) {
- possibleChar=possibleChar.concat(numbers);
- console.log(possibleChar)
-}
-var yesSpecial = confirm("Click OK to confirm including uppercase characters") 
-if (yesSpecial) {
- possibleChar=possibleChar.concat(specialChars);
- console.log(possibleChar)
+  var yesLower = confirm("Click OK to confirm including lowercase characters") 
+  if (yesLower) {
+    possibleChar=possibleChar.concat(lowerCase);
+    console.log(possibleChar)
+    //add a random lowercase letter to the password
+  }
+  var yesUpper = confirm("Click OK to confirm including uppercase characters") 
+  if (yesUpper) {
+    possibleChar=possibleChar.concat(upperCase);
+    console.log(possibleChar)
+    //add a random uppercase letter to the password
+  }
+  var yesNumber = confirm("Click OK to confirm including number characters") 
+  if (yesNumber) {
+    possibleChar=possibleChar.concat(numbers);
+    console.log(possibleChar)
+  }
+  var yesSpecial = confirm("Click OK to confirm including special characters") 
+  if (yesSpecial) {
+    possibleChar=possibleChar.concat(specialChars);
+    console.log(possibleChar)
+  }
+
+  // create for loop to generate a password using user's character selections
+  console.log("Building Password: ")
+  while (password.length < numberOfCharacters ) {
+    password += possibleChar[Math.floor(Math.random() * possibleChar.length)]
+    console.log(password);
+  }
+  return password; 
 }
 
-// create for loop to generate a password using user's character selections
-
-for ( let i = 0; i < ""; i++ ) {
-  password+= possibleChar.at(Math.floor(Math.random() * numberOfCharacters))
-}
-return password; 
-}
-// end the loop
-console.log(possibleChar)
 
