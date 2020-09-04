@@ -7,3 +7,6 @@
 * Pulled user selections for character options using lowercase, upercase, numbers, and special characters
 * Generated a password using user's chosen character selections
 * Provided alerts to ensure user met needed criteria 
+## Screenshots
+![contact](./assets/Password-start.png "password start screenshot")
+![contact](./assets/password-generated.png "password generated screenshot")
