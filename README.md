@@ -8,4 +8,4 @@
 * Generated a password using user's chosen character selections
 * Provided alerts to ensure user met needed criteria 
 
-![Alt Text](C:\Users\Kelle\Downloads\Untitled_ Sep 4, 2020 6_33 PM.gif)
+![Alt Text](https://media.giphy.com/media/WQx542TRPoCejTgKD8/giphy.gif)
