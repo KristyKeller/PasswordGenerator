@@ -8,5 +8,5 @@
 * Generated a password using user's chosen character selections
 * Provided alerts to ensure user met needed criteria 
 ## Screenshots
-![before](./assets/Images/Password-start.png "password start screenshot")
+![before](file://Password-start.png)
 ![after](./assets/Images/password-generated.png "password generated screenshot")
