@@ -8,5 +8,5 @@
 * Generated a password using user's chosen character selections
 * Provided alerts to ensure user met needed criteria 
 ## Screenshots
-![img](.This PC/Downloads/Password-start.png)
+![img](./This PC/Downloads/Password-start.png)
 ![after]()
