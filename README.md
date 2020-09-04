@@ -8,4 +8,5 @@
 * Generated a password using user's chosen character selections
 * Provided alerts to ensure user met needed criteria 
 
+## Screenshot
 ![Alt Text](https://media.giphy.com/media/WQx542TRPoCejTgKD8/giphy.gif)
