@@ -72,6 +72,9 @@ function generatePassword() {
     }
     return password;
 
+
   }
 
 }
+
+
