@@ -1,3 +1,4 @@
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -70,5 +71,3 @@ function generatePassword() {
   }
   return password; 
 }
-
-
