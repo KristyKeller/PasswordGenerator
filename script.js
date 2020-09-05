@@ -32,13 +32,9 @@ function generatePassword() {
       if(numberOfCharacters < 8 || numberOfCharacters > 128 || typeof(numberOfCharacters) != "number" || numberOfCharacters === NaN || numberOfCharacters === null) {
           alert("Please choose a number that is more than 8 and less than 128 characters.");
         return "";  // numberOfCharacters=parseInt(prompt("How many characters do you want your password to be?"));
-      } 
-  if (numberOfCharacters == null){
-      alert("Please choose a number that is more than 8 and less than 128 characters.");
-      generatePassword();
-  
-  
-  }
+      } else {
+        
+          
 
   // Need user to select correct criteria next
   // Build array from scratch
@@ -75,6 +71,10 @@ function generatePassword() {
     console.log(password);
   }
   return password; 
+
+
+}
+
 }
 
 
