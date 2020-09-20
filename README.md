@@ -21,3 +21,4 @@ so that I can create a strong password that provides greater security
 ![Alt Text](https://media.giphy.com/media/WQx542TRPoCejTgKD8/giphy.gif)
 
 ## Screenshot 
+![password](./Assets/Images/password-generator.png)
