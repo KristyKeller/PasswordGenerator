@@ -11,9 +11,9 @@ so that I can create a strong password that provides greater security
 
 ## Application Overview
 * Created arrays to generate password options
-* Recieved user input through prompts and confirms 
+* Received user input through prompts and confirms 
 * Directed user to confirm numeric characters
-* Pulled user selections for character options using lowercase, upercase, numbers, and special characters
+* Pulled user selections for character options using lowercase, uppercase, numbers, and special characters
 * Generated a password using user's chosen character selections
 * Provided alerts to ensure user met needed criteria 
 
