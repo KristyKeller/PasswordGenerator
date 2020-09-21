@@ -28,7 +28,7 @@ so that I can create a strong password that provides greater security
 * HTML
 * CSS
 
-## License#
+## License
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Copyright 2020 ©Kristy Keller
