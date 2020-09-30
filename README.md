@@ -1,6 +1,6 @@
 # 🔑 Password Generator
 
-[CLICK HERE TO VIEW LIVE SITE](https://kristykeller.github.io/password-generator/) 
+[CLICK HERE TO VIEW LIVE SITE](https://kristykeller.github.io/PasswordGenerator/) 
  
 ## User Story
 ```
